@@ -1,0 +1,9 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "FilmCritic32",
+  "email": "filmcritic@aol.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
