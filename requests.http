@@ -1,3 +1,4 @@
+#Signup for User - User Create
 POST http://localhost:3000/users
 Content-Type: application/json
 
@@ -6,4 +7,14 @@ Content-Type: application/json
   "email": "filmcritic@aol.com",
   "password": "password",
   "password_confirmation": "password"
+}
+
+#User Login
+###
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "filmcritic@aol.com",
+  "password": "password"
 }
