@@ -1,3 +1,5 @@
+@jwt = 
+
 #Signup for User - User Create
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -18,3 +20,7 @@ Content-Type: application/json
   "email": "filmcritic@aol.com",
   "password": "password"
 }
+
+
+# For future requests - need to be logged in
+# Authorization: Bearer {{ jwt }}
