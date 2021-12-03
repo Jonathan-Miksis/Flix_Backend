@@ -25,5 +25,33 @@ Content-Type: application/json
 # For future requests - need to be logged in
 # Authorization: Bearer {{ jwt }}
 
+#Show all of the media
 ###
 GET http://localhost:3000/media
+
+
+#Create Review
+###
+POST http://localhost:3000/reviews
+Content-Type: application/json
+
+{
+  "title": "This was MEH",
+  "flix_rating": 5,
+  "post": "This was a pretty disappoitning show - no development and slow to start. Not really recommend unless you are SUPER bored."
+}
+
+###
+DELETE http://localhost:3000/reviews/2
+
+#Create comment
+###
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+  "body": "That's an interesting opinion - have you seen the originals?"
+}
+
+###
+DELETE http://localhost:3000/comments/1
