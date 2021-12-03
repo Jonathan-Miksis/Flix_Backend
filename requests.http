@@ -1,4 +1,4 @@
-@jwt = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODIxNjB9.DJI55kHQdrvj8Kl7bDJVeB4M6TltpNhS2uIXux-TEnU
 
 #Signup for User - User Create
 POST http://localhost:3000/users
@@ -24,3 +24,6 @@ Content-Type: application/json
 
 # For future requests - need to be logged in
 # Authorization: Bearer {{ jwt }}
+
+###
+GET http://localhost:3000/media
