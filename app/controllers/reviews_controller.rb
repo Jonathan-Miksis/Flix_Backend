@@ -1,14 +1,16 @@
 class ReviewsController < ApplicationController
   def index 
-    review = Review.all
+    review = current_user.reviews
     render json: review
   end
 
   def create 
     review = Review.new(
+      user_id: current_user.id,
       title: params[:title],
       flix_rating: params[:flix_rating],
-      post: params[:post]
+      post: params[:post],
+      medium_id: params[:medium_id]
     )
     review.save
     render json: review

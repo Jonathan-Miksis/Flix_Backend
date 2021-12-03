@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODIxNjB9.DJI55kHQdrvj8Kl7bDJVeB4M6TltpNhS2uIXux-TEnU
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODYzODV9.j2rZvswkXME1zaFDmSusNdItpskyFXAjmxzeL1LAWH8
 
 #Signup for User - User Create
 POST http://localhost:3000/users
@@ -33,20 +33,25 @@ GET http://localhost:3000/media
 #Create Review
 ###
 POST http://localhost:3000/reviews
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODYzODV9.j2rZvswkXME1zaFDmSusNdItpskyFXAjmxzeL1LAWH8
 Content-Type: application/json
 
 {
   "title": "This was MEH",
   "flix_rating": 5,
-  "post": "This was a pretty disappoitning show - no development and slow to start. Not really recommend unless you are SUPER bored."
+  "post": "This was a pretty disappoitning show - no development and slow to start. Not really recommend unless you are SUPER bored.",
+  "medium_id": 150
 }
 
 ###
 DELETE http://localhost:3000/reviews/2
+Authorization: Bearer
+
 
 #Create comment
 ###
 POST http://localhost:3000/comments
+Authorization: Bearer
 Content-Type: application/json
 
 {
@@ -55,3 +60,4 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/comments/1
+Authorization: Bearer
