@@ -1,0 +1,12 @@
+12/2/21
+
+Have created most of the backend - need to look at associations again and see why things aren't saving the the database
+  Connect reviews, media, users, and comments together so that they become associated
+
+ABSOLUTELY NEED TO FIGURE OUT APIS - need to combine them so data in database is full for media 
+
+Need show action for all movies to search by different things
+
+THIS WOULD COMPLETE THE MVP FOR BACKEND MOVE ONTO THE FRONT END 
+
+

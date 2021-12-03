@@ -45,7 +45,7 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/reviews/2
-Authorization: Bearer
+Authorization: Bearer 
 
 
 #Create comment
