@@ -14,4 +14,8 @@ Rails.application.routes.draw do
   #for comments
   post "/comments" => "comments#create"
   delete "/comments/:id" => "comments#destroy"
+
+  #for media
+  get "/media" => "media#index"
+  get "/media/:id" => "media#show"
 end

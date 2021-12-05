@@ -29,6 +29,9 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/media
 
+###
+GET http://localhost:3000/media/2
+
 
 #Create Review
 ###
