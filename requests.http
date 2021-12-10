@@ -25,10 +25,11 @@ Content-Type: application/json
 # For future requests - need to be logged in
 # Authorization: Bearer {{ jwt }}
 
-#Show all of the media
+#Index all of the media
 ###
 GET http://localhost:3000/media
 
+#Show action for media
 ###
 GET http://localhost:3000/media/2
 
@@ -46,6 +47,11 @@ Content-Type: application/json
   "medium_id": 150
 }
 
+#show all reviews
+###
+GET http://localhost:3000/reviews
+
+#delete review
 ###
 DELETE http://localhost:3000/reviews/2
 Authorization: Bearer 

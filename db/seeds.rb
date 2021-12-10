@@ -41,10 +41,11 @@ require 'rest-client'
 media = Medium.all
 
 media.each do |medium|
-  id = media.imdb_id
+  binding.pry
+  id = medium.imdb_id
   trailer_call = RestClient.get "https://imdb-api.com/en/API/Trailer/#{Rails.application.credentials.imdb_api_key}/#{id}"
-  Medium.update(
-    media.trailer_url = medium["link"]
+  medium.update(
+    trailer_url: medium["link"]
     )
 end
 
