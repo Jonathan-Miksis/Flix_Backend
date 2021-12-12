@@ -10,3 +10,33 @@ Need show action for all movies to search by different things
 THIS WOULD COMPLETE THE MVP FOR BACKEND MOVE ONTO THE FRONT END 
 
 
+
+12/9/21
+
+BACKEND
+
+Need to aggregate flix ratings into each movie and display as part of the movie data
+
+Still need to get full cast, trailer info, img, as well as fix director information 
+
+Need to reseed database afterward with updated information 
+
+Make sure appropriate serializers are in place to get data displayed correctly
+
+THIS should finish backend
+
+FRONTEND
+
+Need to then create frontend for creating comments 
+
+linking created reviews to specific movies DONE
+
+Need to do a media show action and search 
+
+edit actions for comments & reviews
+
+
+
+
+
+
