@@ -5,7 +5,7 @@ Have created most of the backend - need to look at associations again and see wh
 
 ABSOLUTELY NEED TO FIGURE OUT APIS - need to combine them so data in database is full for media 
 
-Need show action for all movies to search by different things
+DONE Need show action for all movies to search by different things 
 
 THIS WOULD COMPLETE THE MVP FOR BACKEND MOVE ONTO THE FRONT END 
 
@@ -21,7 +21,7 @@ Still need to get full cast, trailer info, img, as well as fix director informat
 
 Need to reseed database afterward with updated information 
 
-Make sure appropriate serializers are in place to get data displayed correctly
+DONE Make sure appropriate serializers are in place to get data displayed correctly
 
 THIS should finish backend
 
@@ -29,12 +29,23 @@ FRONTEND
 
 Need to then create frontend for creating comments 
 
-linking created reviews to specific movies DONE
+DONE linking created reviews to specific movies DONE
 
-Need to do a media show action and search 
+DONE Need to do a media show action and search 
 
 edit actions for comments & reviews
 
+
+
+12/13/21
+
+ABSOLUTE MUST HAVES TO GET MVP DONE
+
+Create action for reviews needs to be fixed
+
+Need to display user on reviews
+
+Need to have reviews displayed on media show easier to read 
 
 
 

@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   #for users
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
-  get "/media" => "media#index"
 
 
   #for reviews

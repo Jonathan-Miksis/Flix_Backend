@@ -37,7 +37,7 @@ GET http://localhost:3000/media/2
 #Create Review
 ###
 POST http://localhost:3000/reviews
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODYzODV9.j2rZvswkXME1zaFDmSusNdItpskyFXAjmxzeL1LAWH8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Mzk1MTU3ODd9.R6RXP7Qiaw_K6dVfBsvaGqH0hkRVp9O8J51QE_0sAws
 Content-Type: application/json
 
 {
