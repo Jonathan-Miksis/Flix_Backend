@@ -17,4 +17,9 @@ Rails.application.routes.draw do
   #for media
   get "/media" => "media#index"
   get "/media/:id" => "media#show"
+
+  #for watchlist
+  get "/watchlist" => "watchlists#index"
+  post "/watchlist" => "watchlists#create"
+  delete "/watchlist/:id" => "watchlists#destroy"
 end

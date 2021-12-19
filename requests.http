@@ -1,12 +1,12 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODYzODV9.j2rZvswkXME1zaFDmSusNdItpskyFXAjmxzeL1LAWH8
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NDAwMjQ3MDl9.7tVv1JcAJ5Bt48nlKgz6jpV5ijrchgfEkU98tqF6V8I
 
 #Signup for User - User Create
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "username": "FilmCritic32",
-  "email": "filmcritic@aol.com",
+  "username": "FilmCritic12",
+  "email": "filmcritic12@aol.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -17,7 +17,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "filmcritic@aol.com",
+  "email": "filmcritic12@aol.com",
   "password": "password"
 }
 
@@ -70,3 +70,17 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/comments/1
 Authorization: Bearer
+
+
+###
+GET http://localhost:3000/watchlist
+Authorization: Bearer {{ jwt }}
+
+###
+POST http://localhost:3000/watchlist
+Authorization: Bearer {{ jwt }}
+Content-Type: application/json
+
+{
+  "medium_id": 2
+}
