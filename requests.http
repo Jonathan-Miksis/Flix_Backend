@@ -82,5 +82,5 @@ Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
-  "medium_id": 2
+  "medium_id": 4
 }

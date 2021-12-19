@@ -1,9 +1,8 @@
 class WatchlistsController < ApplicationController
 
   def index
-    # watchlist = current_user.watchlist.where(status: "watch")
-    watchlist = Watchlist.all
-    render json: watchlist
+    watchlist_item = current_user.watchlists.where(status: "watch")
+    render json: watchlist_item
   end
   
   def create
