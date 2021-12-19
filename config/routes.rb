@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   #for media
   get "/media" => "media#index"
   get "/media/:id" => "media#show"
+  get "/search" => "media#search"
 
   #for watchlist
   get "/watchlist" => "watchlists#index"

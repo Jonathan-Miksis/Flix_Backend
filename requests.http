@@ -84,3 +84,12 @@ Content-Type: application/json
 {
   "medium_id": 4
 }
+
+###
+GET http://localhost:3000/search
+Authorization: Bearer {{ jwt }}
+Content-Type: application/json
+
+{
+  "title": "Interstellar"
+}
