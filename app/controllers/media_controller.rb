@@ -9,4 +9,10 @@ class MediaController < ApplicationController
     render json: media
   end
 
+  def search 
+    medium = Medium.find_by(id: params[:search])
+    render json: medium 
+  end
+  
+
 end
